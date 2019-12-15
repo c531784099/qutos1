@@ -3,9 +3,7 @@ import time
 import  scrapy
 from scrapy.http.response.html import HtmlResponse
 from scrapy.selector.unified import SelectorList
-
 from qutos.items import QutosItem
-
 
 class TestJ(scrapy.Spider):
         # 爬虫的名称，不可更改
