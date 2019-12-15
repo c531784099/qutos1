@@ -1,5 +1,4 @@
 import time
-
 import  scrapy
 from scrapy.http.response.html import HtmlResponse
 from scrapy.selector.unified import SelectorList
@@ -18,7 +17,8 @@ class TestJ(scrapy.Spider):
                       # 'http://quotes.toscrape.com/page/8/',
                       # 'http://quotes.toscrape.com/page/9/',
                       # 'http://quotes.toscrape.com/page/10/',
-                      ]  # 从这个网址开始执行爬虫，注意默认是http，修改成https
+                      ]
+        # 从这个网址开始执行爬虫，注意默认是http，修改成https
         # scrapy爬虫中不会主动修改页面中的链接，所以自己增加一个类变量用于将相对地址完整成为绝对地址。
         #baseurl = 'https://formoon.github.io'
         #深度爬取http://www.uml.org.cn/python/2019070421.asp
